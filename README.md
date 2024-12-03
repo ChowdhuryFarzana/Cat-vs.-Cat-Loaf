@@ -100,19 +100,19 @@ highlights the importance of spatial feature extraction in neural
 networks and serves as a testbed for evaluating the robustness
 of CNN architectures in nuanced classification tasks.
 # METHODOLOGY
-A. Data Preprocessing
+## A. Data Preprocessing
 To prepare the dataset for training, the following prepro-
 cessing steps were applied:
 • Resizing and Normalization: All images were resized
 to 100 × 100 pixels, and pixel values were scaled to
 the range [0, 1] to ensure uniform input and faster model
 convergence.
-• Data Augmentation: Random transformations, including
+ • Data Augmentation: Random transformations, including
 rotation (up to 30◦), width and height shifts (up to 20%),
 and horizontal flips, were applied. These augmentations
 increased dataset diversity, reduced overfitting, and im-
 proved generalization.
-B. Model Architecture
+## B. Model Architecture
 The CNN architecture consists of:
 • Three convolutional layers with filter sizes of 32, 64, and
 128, each followed by ReLU activation and max-pooling.
@@ -121,21 +121,21 @@ activation.
 • A dropout layer with a rate of 0.5 to prevent overfitting.
 • A final dense layer with sigmoid activation for binary
 classification.
-C. Training and Validation
+## C. Training and Validation
 The dataset was split in an 80:20 ratio, with the majority
 reserved for training and a smaller subset for validation. The
 model was trained for 10 epochs using the Adam optimizer and
 binary cross-entropy loss. Batch size was set to 32, balancing
 training efficiency and memory requirements.
-V. EXPERIMENTATION AND EVALUATION
-A. Evaluation Metrics
+# V. EXPERIMENTATION AND EVALUATION
+## A. Evaluation Metrics
 The model’s performance was assessed using accuracy,
 precision, recall, and F1-score. These metrics provided a com-
 prehensive understanding of the model’s efficacy. A confusion
 matrix was used to visualize the distribution of predictions
 across the ”Cat” and ”Cat Loaf” classes, highlighting strengths
 and potential areas for improvement.
-B. Experimentation Steps
+## B. Experimentation Steps
 The experimentation process involved:
 1) Loading and preprocessing the dataset, including nor-
 malization and augmentation.
